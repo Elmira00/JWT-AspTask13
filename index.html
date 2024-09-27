@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Login</title>
+</head>
+<body style="background-color:rgba(61, 135, 246, 0.548) ;">
+    <div style="display:flex;flex-direction: column ;text-align: center; justify-content: center; " >
+        <h1 style="justify-content: center; display: flex;margin: 10px;color: rgb(4, 34, 117);">Log In</h1>
+        <div style="display: block; margin: 20px;" >
+            <label  style="color: rgb(4, 34, 117); margin: 5px; font-size:20px; display: inline-block;" for="inputUsername" >Username</label>
+              <input required type="  text"  style="font-size:20px; padding:3px 10px; border: 1px solid white;; border-radius: 10px; display: inline-block;"  id="inputUsername" >
+          </div>
+                <div style="display: block; margin: 20px;" >
+            <label  style="color: rgb(4, 34, 117); margin: 5px; font-size:20px; display: inline-block;" for="inputPassword" >Password</label>
+              <input required type="password"  style="font-size:20px; padding:3px 10px; border: 1px solid white;; border-radius: 10px; display: inline-block;"  id="inputPassword" >
+            </div>
+            <div style="display: flex;justify-content: center;">
+                <button onclick="Login()" style="border-radius: 10px;color: aliceblue;background-color: rgb(255, 0, 0); font-size: 15px; height: 30px; width: 70px;">Log In</button>
+                <span style="color: rgb(0, 0, 0);margin-left:6%; font-size: 12px;">Don't have an account? <a href="signup.html">Sign up</a></span>
+        </div>
+
+</div>
+<h1>City Data</h1>
+    <table id="cityTable" style="border: 5px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Photo URL</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added dynamically here -->
+        </tbody>
+    </table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

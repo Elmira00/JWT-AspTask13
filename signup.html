@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body style="background-color:rgba(61, 246, 157, 0.548) ;">
+    <div style="display:flex;flex-direction: column ;text-align: center; justify-content: center; " >
+        <h1 style="justify-content: center; display: flex;margin: 10px;color: rgb(0, 53, 18);">Sign Up</h1>
+        <div style="display: block; margin: 20px;" >
+            <label  style="color: rgb(0, 53, 18); margin: 5px; font-size:20px; display: inline-block;" for="inputUsername" >Username</label>
+              <input required type="  text"  style="font-size:20px; padding:3px 10px; border: 1px solid white;; border-radius: 10px; display: inline-block;"  id="inputUsername" >
+          </div>
+                <div style="display: block; margin: 20px;" >
+            <label  style="color:  rgb(0, 53, 18); margin: 5px; font-size:20px; display: inline-block;" for="inputPassword" >Password</label>
+              <input required type="password"  style="font-size:20px; padding:3px 10px; border: 1px solid white;; border-radius: 10px; display: inline-block;"  id="inputPassword" >
+            </div>
+            <div style="display: flex;justify-content: center;">
+                <button onclick="Signup()" style="border-radius: 10px;color: aliceblue;background-color: rgb(255, 0, 0); font-size: 15px; height: 30px; width: 70px;">Sign Up</button>
+                <span style="color: rgb(0, 0, 0);margin-left:6%; font-size: 12px;">Already have an account? <a  href="index.html">Log In</a></span>
+        </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
